@@ -1,0 +1,50 @@
+.singIn{
+
+    text-align: center;
+  
+
+}
+
+.sinup{
+    text-align: center;
+
+}
+.singIn>Form {
+    display: inline-block;
+    margin-top: 5%;
+    background-color: white;
+    width: 30vw;
+    
+}
+
+.sinup>Form {
+    display: inline-block;
+    margin-top: 5%;
+    background-color: white;
+    width: 30vw;
+    
+}
+
+@media screen and (max-width:765px){
+    
+    .sinup>Form {
+
+        width: 100%;
+
+    }
+    .sinup{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .singIn>Form {
+
+        width: 100%;
+
+    }
+    .singIn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

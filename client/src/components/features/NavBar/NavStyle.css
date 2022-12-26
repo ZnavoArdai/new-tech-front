@@ -1,0 +1,8 @@
+.navbarcontain{
+  background-color: rgba(71,63,88,255);
+
+}
+.navbar-bg{
+  background-color:rgba(50,40,69,255)!important;
+  transition: 0.2s ease-in
+}
