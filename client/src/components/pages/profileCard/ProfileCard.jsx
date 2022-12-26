@@ -8,6 +8,7 @@ import { FaRegComments } from "react-icons/fa";
 
 
 
+
 function ProfileCard({post}) {
 const navigate=useNavigate()
   const deleteBtn=(id)=>{
@@ -61,13 +62,13 @@ const navigate=useNavigate()
         
            <Card.Text className="float-end">
 
-            <a className="mx-2 btn text-warning " href={`/posts/${post._id}`}  >
+            <NavLink className="mx-2 btn text-warning " as={Link} to={`/posts/${post._id}`}  >
             <MdOutlineModeEditOutline size={25}    />
-          </a>
+          </NavLink>
           
-          <a className="mx-2 btn text-danger " onClick={()=>deleteBtn(post._id)} >
+          <NavLink className="mx-2 btn text-danger " onClick={()=>deleteBtn(post._id)} >
             <FiDelete  size={25}/>
-          </a>
+          </NavLink>
           
           </Card.Text>
       </Card.Body>
