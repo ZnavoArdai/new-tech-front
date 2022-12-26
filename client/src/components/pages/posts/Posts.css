@@ -28,6 +28,17 @@
   justify-content: center;
 }
 
+.postcardContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.postcard{
+  width: 50%;
+}
+
 
 
 
@@ -35,6 +46,10 @@
 @media screen and (max-width:765px) {
     .update {
         width: 90vw;
+      }
+
+      .postcard{
+        width: 100%;
       }
  
 }

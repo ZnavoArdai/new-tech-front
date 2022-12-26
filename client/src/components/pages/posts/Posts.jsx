@@ -28,7 +28,7 @@ const deleteBtn=(id)=>{
 
   
   return (
-    <div className='main row mt-5 container-fluid' id='postsShowCase' style={{minHeight:"100vh"}}>
+    <div className='container-fluid' id='postsShowCase' style={{minHeight:"100vh"}}>
       <div className={alert?'fixed-top mt-5 w-25 d-flex justify-content-center align-items-center h-100':"d-none"} >
       <DeleteAlert />
       <img
@@ -38,7 +38,7 @@ const deleteBtn=(id)=>{
           />
 
       </div>
-      <div className='d-flex justify-content-center container-fluid row '>
+      <div className='postcardContainer  '>
 
 {posts? (posts.map((post,index)=> {
 return(
