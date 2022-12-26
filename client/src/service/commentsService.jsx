@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:6060/";
+axios.defaults.baseURL = "https://new-tech-backend.onrender.com/";
 
 
 

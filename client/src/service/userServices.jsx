@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:6060/";
+axios.defaults.baseURL = "https://new-tech-backend.onrender.com/";
 export const register = async (signUpForm) => {
   const res = await axios
     .post("user/api/register", {
@@ -31,14 +31,14 @@ return data
 }
 
 export const getUserById= async (id)=>{
-  const res= await fetch(`http://localhost:6060/user/api/${id}`)
+  const res= await fetch(`https://new-tech-backend.onrender.com/${id}`)
 
   const newData = await res.json();
   return newData;
 } 
 
 export const getSms= async ()=>{
-  const res= await fetch(`http://localhost:6060/user/api/send/sms`)
+  const res= await fetch(`https://new-tech-backend.onrender.com/user/api/send/sms`)
 
   return res;
 } 
