@@ -31,7 +31,7 @@ return data
 }
 
 export const getUserById= async (id)=>{
-  const res= await fetch(`https://new-tech-backend.onrender.com/${id}`)
+  const res= await fetch(`https://new-tech-backend.onrender.com/user/api/${id}`)
 
   const newData = await res.json();
   return newData;

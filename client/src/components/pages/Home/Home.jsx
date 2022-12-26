@@ -8,6 +8,8 @@ import { FaPeopleArrows } from 'react-icons/fa';
 import { GrTechnology} from 'react-icons/gr';
 import { FaGlobeAfrica } from 'react-icons/fa';
 import CarouselApp from '../../features/Carusel/Carusel'
+import { Link, NavLink } from "react-router-dom";
+
 
 const Home = () => {
 const isLoggedIn=useSelector(state=>state.isLoggedIn)
@@ -65,8 +67,8 @@ const isLoggedIn=useSelector(state=>state.isLoggedIn)
 <div className='mt-5 d-flex justify-content-center mb-5'>
 
 {!isLoggedIn&&(<>
-  <Button style={{ border: "none", width: 200 ,marginRight:55,background:"rgba(59,177,153,255)"}} href="/signIn/signUp" >Sing In</Button>
-<Button style={{ border: "none", width: 200 ,background:"rgba(59,177,153,255)"}} href="/POSTS" >Posts</Button>
+  <Button style={{ border: "none", width: 200 ,marginRight:55,background:"rgba(59,177,153,255)"}} as={Link} to={"/signIn/signUp"} >Sing In</Button>
+<Button style={{ border: "none", width: 200 ,background:"rgba(59,177,153,255)"}} as={Link} to={"/POSTS"}  >Posts</Button>
 </>
 
 )}
